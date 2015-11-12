@@ -1,5 +1,5 @@
 {% if password is not defined %}
-{% set password = {{ salt['pillar.get']('password') }} %}
+{% set password = salt['pillar.get']('password') %}
 {% endif %}
 
 cwrsyncserver:
