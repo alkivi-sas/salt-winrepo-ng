@@ -1,8 +1,8 @@
-{% if not password %}
+{% if password is not defined %}
 {% set password = {{ salt['pillar.get']('password') }} %}
 {% endif %}
 
-{% if not user %}
+{% if user is not defined %}
 {% set user = 'alkivi' %}
 {% endif %}
 
