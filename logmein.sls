@@ -1,4 +1,4 @@
-{% if not deployid %}
+{% if deployid is not defined %}
 {% set deployid = salt['pillar.get']('logmein_deployid') %}
 {% endif %}
 
