@@ -1,4 +1,4 @@
-tightvnc:
+tigervnc:
   '1.7.0':
     full_name: 'TigerVNC'
     {% if grains['cpuarch'] == 'AMD64' %}
